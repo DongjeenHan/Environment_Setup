@@ -13,9 +13,11 @@ export default function BottomNavBar() {
         <MaterialCommunityIcons name="play-box-outline" size={24} color="white" />
         <Text style={styles.navText}>Shorts</Text>
       </View>
-      <View style={[styles.navItem, { marginLeft: 17}]}>
-        <Ionicons name="add-circle-outline" size={36} color="white" />
+      <View style={[styles.navItem, { marginLeft: 17 }]}>
+      <View style={styles.addCircleBackground}>
+        <Ionicons name="add-circle-outline" size={28} color="white" />
       </View>
+     </View>
       <View style={styles.navItem}>
         <Ionicons name="videocam-outline" size={24} color="white" />
         <Text style={styles.navText}>Subscriptions</Text>
@@ -51,5 +53,14 @@ const styles = StyleSheet.create({
     color: 'white',
     marginTop: 4,
   },
+  addCircleBackground: {
+  width: 40,
+  height: 40,
+  borderRadius: 20,
+  backgroundColor: '#444',
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+
 });
 

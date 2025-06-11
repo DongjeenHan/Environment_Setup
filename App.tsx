@@ -6,6 +6,7 @@ import ShortsCard from './components/ShortsCard';
 import VideoCard from './components/VideoCard';
 import BottomNavBar from './components/BottomNavbar';
 import { Ionicons } from '@expo/vector-icons';
+import CategoryBar from './components/CategoryBar';
 
 
 export default function App() {
@@ -14,10 +15,21 @@ export default function App() {
       <SafeAreaView style={{ flex: 1 }}>
         <ScrollView contentContainerStyle={styles.scrollContent}>
           <Header />
+          
 
-          <View style={styles.compassButton}>
-            <Ionicons name="compass-outline" size={24} color="white" />
-          </View>
+    <View style={styles.categoryRow}>
+      <View style={styles.compassButton}>
+        <Ionicons name="compass-outline" size={24} color="white" />
+      </View>
+
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={styles.categoryScroll}
+      >
+        <CategoryBar />
+      </ScrollView>
+    </View>
 
 
           <ShortsLabel />
@@ -78,8 +90,8 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     padding: 8,
     borderRadius: 8,
-    marginTop: 10,
-    marginLeft: 16,
+    marginTop: 5,
+    marginLeft: 5,
   },
   cardRow: {
     flexDirection: 'row',
@@ -87,4 +99,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginTop: 12,
   },
+  categoryRow: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginTop: 10,
+  marginHorizontal: 16,
+},
+categoryScroll: {
+  flex: 1,
+},
 });

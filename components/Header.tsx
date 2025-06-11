@@ -43,8 +43,10 @@ const styles = StyleSheet.create({
   },
   logoText: {
     fontSize: 23,
-    fontWeight: 'bold',
+    fontWeight: '600',
     color: 'white',
+    fontFamily: 'sans-serif',
+    letterSpacing: -2,
   },
   iconGroup: {
     flexDirection: 'row',
