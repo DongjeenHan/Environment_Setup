@@ -21,13 +21,13 @@ export default function VideoCard({
     <View style={styles.card}>
       <Image source={image} style={styles.image} resizeMode="cover" />
       <View style={styles.infoRow}>
-  <Image source={logo} style={styles.logo} />
-  <View style={styles.textBox}>
-    <Text style={styles.title}>{title}</Text>
-    <Text style={styles.subtitle}>{channel} • {views} • {time}</Text>
-  </View>
-  <Ionicons name="ellipsis-vertical" size={18} color="white" style={styles.moreIcon} />
-</View>
+        <Image source={logo} style={styles.logo} />
+        <View style={styles.textBox}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.subtitle}>{channel} • {views} • {time}</Text>
+        </View>
+        <Ionicons name="ellipsis-vertical" size={18} color="white" style={styles.moreIcon} />
+      </View>
     </View>
   );
 }

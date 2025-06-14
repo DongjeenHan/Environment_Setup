@@ -49,10 +49,10 @@ export default function App() {
           <View style={{ marginTop: 16 }}>
             <VideoCard
               title="SAIT Johnson-Cobbe Energy Centre"
-              image={require('./assets/Sait3.jpg')}
+              image={require('./assets/Sait3.webp')}
               logo={require('./assets/Sait_Logo.png')}
               channel="SAIT Campus"
-              views="1.2K views"
+              views="835 views"
               time="2 hours ago"
             />
             <VideoCard
@@ -60,8 +60,24 @@ export default function App() {
               image={require('./assets/Sait4.jpg')}
               logo={require('./assets/Sait_Logo.png')}
               channel="SAIT Campus"
-              views="835 views"
+              views="1.2K views"
               time="1 day ago"
+            />
+            <VideoCard
+              title="SAIT Wellness Centre"
+              image={require('./assets/Sait5.webp')}
+              logo={require('./assets/Sait_Logo.png')}
+              channel="SAIT Campus"
+              views="1.1k views"
+              time="2 weeks ago"
+            />
+            <VideoCard
+              title="Welcome to SAIT Campus Tour!"
+              image={require('./assets/Sait6.jpg')}
+              logo={require('./assets/Sait_Logo.png')}
+              channel="SAIT Campus"
+              views="2.3k views"
+              time="2 months ago"
             />
           </View>
           <View style={{ padding: 20 }}>
